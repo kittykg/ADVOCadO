@@ -50,6 +50,11 @@ map_with_arg_([Elem|Tail], Arg1, Goal, Res) :-
 first((X, _), X).
 second((_, Y), Y).
 
+% ------------------ List ------------------
+split_at(N, List, SubList1, SubList2) :-
+    length(SubList1, N),
+    append(SubList1, SubList2, List).
+
 % ------------------ Misc ------------------
 sum(X, Y, Res) :- Res is X + Y.
 mult(X, Y, Res) :- Res is X * Y.
