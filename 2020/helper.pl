@@ -29,7 +29,7 @@ read_number_file(Stream, [N|L]) :-
 % --------------- High-order functions ---------------
 include_with_arg(Goal, List, Arg2, Included) :-
     include_with_arg_(List, Arg2, Goal, Included).
-    
+
 include_with_arg_([], _, _, []).
 include_with_arg_([Elem|Tail], Arg2, Goal, Included) :-
     ( call(Goal, Elem, Arg2)
@@ -54,6 +54,13 @@ second((_, Y), Y).
 split_at(N, List, SubList1, SubList2) :-
     length(SubList1, N),
     append(SubList1, SubList2, List).
+
+sub_list(List, Start, End, Sub) :-
+    length(List, Len), Start >= 0, End =< Len,
+    SubLen is End - Start,
+    append(T1, Sub, T2),
+    length(T1, Start), length(Sub, SubLen),
+    append(T2, _, List).
 
 % ------------------ Misc ------------------
 sum(X, Y, Res) :- Res is X + Y.
