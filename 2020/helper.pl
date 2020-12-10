@@ -65,3 +65,4 @@ sub_list(List, Start, End, Sub) :-
 % ------------------ Misc ------------------
 sum(X, Y, Res) :- Res is X + Y.
 mult(X, Y, Res) :- Res is X * Y.
+minus(X, Y, Res) :- Res is X - Y.
