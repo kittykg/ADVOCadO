@@ -62,6 +62,16 @@ sub_list(List, Start, End, Sub) :-
     length(T1, Start), length(Sub, SubLen),
     append(T2, _, List).
 
+count(E, L, N) :-
+    include(=(E), L, L2), length(L2, N).
+
+repeat(Elem, N, L) :- repeat_(Elem, N, L).
+
+repeat_(_, 0, []).
+repeat_(Elem, N, [Elem|L]) :-
+    N > 0, NextN is N - 1, 
+    repeat_(Elem, NextN, L).
+
 % ------------------ Misc ------------------
 sum(X, Y, Res) :- Res is X + Y.
 mult(X, Y, Res) :- Res is X * Y.
