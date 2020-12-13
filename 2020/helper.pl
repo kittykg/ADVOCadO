@@ -72,6 +72,12 @@ repeat_(Elem, N, [Elem|L]) :-
     N > 0, NextN is N - 1, 
     repeat_(Elem, NextN, L).
 
+prod_list(L, Prod) :- foldl(mult, L, 1, Prod).
+
+enum_list(L, Idx) :-
+    length(L, Len), Upper is Len - 1,
+    numlist(0, Upper, Idx).
+
 % ------------------ Misc ------------------
 sum(X, Y, Res) :- Res is X + Y.
 mult(X, Y, Res) :- Res is X * Y.

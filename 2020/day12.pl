@@ -1,6 +1,6 @@
 % nvim :set syntax=prolog
 
-% AoC 2020 Day 11
+% AoC 2020 Day 12
 
 :- consult('helper.pl').
 
