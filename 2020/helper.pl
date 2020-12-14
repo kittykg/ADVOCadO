@@ -3,7 +3,8 @@
 :- use_module(library(readutil)).
 
 
-% ------------------ IO ------------------
+% ------------------ I/O ------------------
+
 code_list_to_number(C, N) :-
     is_list(C), number_codes(N, C).
 
@@ -26,7 +27,8 @@ read_number_file(Stream, [N|L]) :-
     read_number_line(Stream, N),
     read_number_file(Stream, L).
 
-% --------------- High-order functions ---------------
+% --------------- Higher-order functions ---------------
+
 include_with_arg(Goal, List, Arg2, Included) :-
     include_with_arg_(List, Arg2, Goal, Included).
 
@@ -47,10 +49,12 @@ map_with_arg_([Elem|Tail], Arg1, Goal, Res) :-
     Res = [SubRes|Others].
 
 % ------------------ Tuples ------------------
+
 first((X, _), X).
 second((_, Y), Y).
 
 % ------------------ List ------------------
+
 split_at(N, List, SubList1, SubList2) :-
     length(SubList1, N),
     append(SubList1, SubList2, List).
@@ -78,7 +82,14 @@ enum_list(L, Idx) :-
     length(L, Len), Upper is Len - 1,
     numlist(0, Upper, Idx).
 
+% ------------------ Dict ------------------
+
+get_all_val(Dict, Vals) :-
+    dict_keys(Dict, Keys), maplist(get_val_(Dict), Keys, Vals).
+get_val_(Dict, K, V) :- V = Dict.get(K).
+
 % ------------------ Misc ------------------
+
 sum(X, Y, Res) :- Res is X + Y.
 mult(X, Y, Res) :- Res is X * Y.
 minus(X, Y, Res) :- Res is X - Y.
