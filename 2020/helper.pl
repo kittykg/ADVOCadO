@@ -2,14 +2,10 @@
 
 :- use_module(library(readutil)).
 
-
 % ------------------ I/O ------------------
 
 code_list_to_number(C, N) :-
     is_list(C), number_codes(N, C).
-
-string_to_number(Str, N) :-
-    string(Str), number_codes(N, Str).
 
 read_number_line(Stream, N) :-
     read_line_to_codes(Stream, Codes),
@@ -26,27 +22,6 @@ read_number_file(Stream, [N|L]) :-
     \+ at_end_of_stream(Stream),
     read_number_line(Stream, N),
     read_number_file(Stream, L).
-
-% --------------- Higher-order functions ---------------
-
-include_with_arg(Goal, List, Arg2, Included) :-
-    include_with_arg_(List, Arg2, Goal, Included).
-
-include_with_arg_([], _, _, []).
-include_with_arg_([Elem|Tail], Arg2, Goal, Included) :-
-    ( call(Goal, Elem, Arg2)
-    -> Included = [Elem|Included1]
-    ;  Included = Included1
-    ),
-    include_with_arg_(Tail, Arg2, Goal, Included1).
-
-map_with_arg(Goal, List, Arg1, Res) :- map_with_arg_(List, Arg1, Goal, Res).
-
-map_with_arg_([], _, _, []).
-map_with_arg_([Elem|Tail], Arg1, Goal, Res) :-
-    call(Goal, Elem, Arg1, SubRes),
-    map_with_arg_(Tail, Arg1, Goal, Others),
-    Res = [SubRes|Others].
 
 % ------------------ Tuples ------------------
 
@@ -73,7 +48,7 @@ repeat(Elem, N, L) :- repeat_(Elem, N, L).
 
 repeat_(_, 0, []).
 repeat_(Elem, N, [Elem|L]) :-
-    N > 0, NextN is N - 1, 
+    N > 0, NextN is N - 1,
     repeat_(Elem, NextN, L).
 
 prod_list(L, Prod) :- foldl(mult, L, 1, Prod).

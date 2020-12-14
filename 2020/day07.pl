@@ -22,7 +22,7 @@ get_inside_bags(S, L) :-
 
 get_inside_bags_([], []).
 get_inside_bags_([Num, C1, C2, _|Tail], [Pair|L]) :-
-    string_to_number(Num, Count),
+    number_string(Count, Num),
     colours_string_to_term(C1, C2, Term),
     Pair = (Term, Count),
     get_inside_bags_(Tail, L).
@@ -42,12 +42,12 @@ get_hash_table(L, HT) :- foldl(add_KV, L, ht{}, HT).
 get_K(S, L, [K|L]) :- get_line_KV(S, K, _).
 get_all_colours(L, Colours) :- foldl(get_K, L, [], Colours).
 
-contain_sg_bag(K, HT) :-
+contain_sg_bag(HT, K) :-
     get_colours(K, HT, Colours),
     member(shiny_gold, Colours).
-contain_sg_bag(K, HT) :-
+contain_sg_bag(HT, K) :-
     get_colours(K, HT, Colours),
-    include_with_arg(contain_sg_bag, Colours, HT, ContainColours),
+    include(contain_sg_bag(HT), Colours, ContainColours),
     \+ [] = ContainColours.
 
 task_1(N) :-
@@ -56,14 +56,14 @@ task_1(N) :-
     close(Stream),
     get_all_colours(L, Colours),
     get_hash_table(L, HT),
-    include_with_arg(contain_sg_bag, Colours, HT, Included),
+    include(contain_sg_bag(HT), Colours, Included),
     length(Included, N).
 
-count_num_bags_inside(K, HT, 0) :- get_colours(K, HT, []).
-count_num_bags_inside(K, HT, Total) :-
+count_num_bags_inside(HT, K, 0) :- get_colours(K, HT, []).
+count_num_bags_inside(HT, K, Total) :-
     V = HT.get(K),
     maplist(first, V, Colours), maplist(second, V, Counts),
-    map_with_arg(count_num_bags_inside, Colours, HT, SubCounts),
+    maplist(count_num_bags_inside(HT), Colours, SubCounts),
     maplist(count_, Counts, SubCounts, Prod),
     sum_list(Prod, Total).
 
@@ -74,4 +74,4 @@ task_2(N) :-
     read_string_file(Stream, L), !,
     close(Stream),
     get_hash_table(L, HT),
-    count_num_bags_inside(shiny_gold, HT, N).
+    count_num_bags_inside(HT, shiny_gold, N).

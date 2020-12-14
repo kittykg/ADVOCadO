@@ -7,7 +7,7 @@
 string_to_instr(S, (Op, N)) :-
     split_string(S, " ", "", [OpStr, NStr]),
     term_string(Op, OpStr),
-    string_to_number(NStr, N).
+    number_string(N, NStr).
 
 parse(L, Instrs) :- maplist(string_to_instr, L, Instrs).
 

@@ -40,11 +40,10 @@ task_1(N) :-
     validate(L, [], N).
 
 % ----------------------
-% ----------------------
 
 valid_year(S, L, U) :-
     sub_string(S, 4, 4, 0, Val),
-    string_to_number(Val, Y),
+    number_string(Y, Val),
     Y >= L, Y =< U.
 
 valid_byr(S) :-
@@ -62,12 +61,12 @@ valid_eyr(S) :-
 valid_hgt(S) :-
     re_match("hgt:[0-9]{3}cm$"/i, S),
     sub_string(S, 4, 3, 2, Val),
-    string_to_number(Val, H),
+    number_string(H, Val),
     H >= 150, H =< 193.
 valid_hgt(S) :-
     re_match("hgt:[0-9]{2}in$"/i, S),
     sub_string(S, 4, 2, 2, Val),
-    string_to_number(Val, H),
+    number_string(H, Val),
     H >= 59, H =< 76.
 
 valid_hcl(S) :- re_match("^hcl:#[0-9a-f]{6}$"/i, S).

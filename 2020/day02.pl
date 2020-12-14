@@ -17,7 +17,7 @@ valid(Pwd, Target, L, U) :-
 valid_password(Str) :-
     split_string(Str, " ", "", [Bound, Tar, Pwd]),
     split_string(Bound, "-", "", [V1, V2]),
-    string_to_number(V1, Lower), string_to_number(V2, Upper),
+    number_string(Lower, V1), number_string(Upper, V2),
     string_chars(Tar, [Target, _]),
     valid(Pwd, Target, Lower, Upper).
 
@@ -35,7 +35,7 @@ valid_2(Pwd, Target, Idx1, Idx2) :-
 valid_password_2(Str) :-
     split_string(Str, " ", "", [Bound, Tar, Pwd]),
     split_string(Bound, "-", "", [V1, V2]),
-    string_to_number(V1, Idx1), string_to_number(V2, Idx2),
+    number_string(Idx1, V1), number_string(Idx2, V2),
     string_chars(Tar, [Target, _]),
     valid_2(Pwd, Target, Idx1, Idx2).
 

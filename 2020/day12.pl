@@ -5,8 +5,8 @@
 :- consult('helper.pl').
 
 parse_line(S, (Dir, Num)) :-
-    sub_string(S, 0, 1, _, Dir),
-    sub_string(S, 1, _, 0, NumStr), string_to_number(NumStr, Num).
+    sub_string(S, 0, 1, _, Dir), sub_string(S, 1, _, 0, NumStr),
+    number_string(Num, NumStr).
 
 dir_to_movement("E", N, N, 0).
 dir_to_movement("N", N, 0, N).

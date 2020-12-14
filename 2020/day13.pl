@@ -18,7 +18,7 @@ get_input(TS, Subs) :-
 task_1(N) :-
     get_input(TS, Subs),
     include(\=("x"), Subs, IdStr),
-    maplist(string_to_number, IdStr, Ids),
+    maplist(number_string, Ids, IdStr),
     maplist(calc_wait(TS), Ids, Waits),
     min_list(Waits, W), wait_to_id(W, TS, Ids, Id),
     N is W * Id.
@@ -26,7 +26,7 @@ task_1(N) :-
 parse([], _, [], []).
 parse(["x"|Subs], Ri, B, M) :- NextRi is Ri + 1, parse(Subs, NextRi, B, M).
 parse([NumStr|Subs], Ri, [Bi|B], [Mi|M]) :-
-    string_to_number(NumStr, Mi),
+    number_string(Mi, NumStr),
     Bi is (Mi - Ri) mod Mi,
     NextRi is Ri + 1,
     parse(Subs, NextRi, B, M).
