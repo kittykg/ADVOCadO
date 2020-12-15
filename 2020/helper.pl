@@ -57,6 +57,8 @@ enum_list(L, Idx) :-
     length(L, Len), Upper is Len - 1,
     numlist(0, Upper, Idx).
 
+tail(L, T) :- append(_, [T], L).
+
 % ------------------ Dict ------------------
 
 get_all_val(Dict, Vals) :-
