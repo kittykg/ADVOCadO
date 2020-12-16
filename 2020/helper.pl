@@ -51,7 +51,7 @@ repeat_(Elem, N, [Elem|L]) :-
     N > 0, NextN is N - 1,
     repeat_(Elem, NextN, L).
 
-prod_list(L, Prod) :- foldl(mult, L, 1, Prod).
+prod_list(L, Prod) :- foldl(mult_, L, 1, Prod).
 
 enum_list(L, Idx) :-
     length(L, Len), Upper is Len - 1,
@@ -67,6 +67,5 @@ get_val_(Dict, K, V) :- V = Dict.get(K).
 
 % ------------------ Misc ------------------
 
-sum(X, Y, Res) :- Res is X + Y.
-mult(X, Y, Res) :- Res is X * Y.
+mult_(X, Y, Res) :- Res is X * Y.
 minus(X, Y, Res) :- Res is X - Y.
