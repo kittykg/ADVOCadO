@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 8
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 string_to_instr(S, (Op, N)) :-
     split_string(S, " ", "", [OpStr, NStr]),

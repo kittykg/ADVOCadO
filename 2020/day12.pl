@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 12
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 parse_line(S, (Dir, Num)) :-
     sub_string(S, 0, 1, _, Dir), sub_string(S, 1, _, 0, NumStr),

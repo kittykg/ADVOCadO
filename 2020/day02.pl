@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 2
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 count_char(_, [], 0).
 count_char(X, [X|L], N) :-

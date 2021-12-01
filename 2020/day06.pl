@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 6
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 string_to_set(String, Set) :-
     string_chars(String, Chars),

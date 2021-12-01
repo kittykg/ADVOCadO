@@ -10,7 +10,11 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 ## Status
 
-**2020**: 16 / 25
+**2021**: 1 / 25
+
+![2021](https://progress-bar.dev/4/)
+
+**2020**: 16 / 25 (Hopefully I'll be motivated enough to finish this =.=)
 
 ![2020](https://progress-bar.dev/64/)
 
@@ -18,7 +22,7 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 - SWI-Prolog
 
-- Python (Just for now! I'm gonna rewrite Day 16 part 2)
+- Python (Just for now! I'm gonna rewrite 2020 Day 16 part 2)
 
 ## Some TODOs
 

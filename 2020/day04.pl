@@ -3,7 +3,7 @@
 % AoC 2020 Day 4
 
 :- use_module(library(pcre)).
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 get_field(S, F) :- sub_string(S, 0, 3, _, F).
 

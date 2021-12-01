@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 13
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 calc_wait(TS, Id, Wait) :- Wait is Id - (TS mod Id).
 

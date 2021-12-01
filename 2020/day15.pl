@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 15
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 speak_num(Idx, LastNum, T, Out) :-
     V is Idx - 1,

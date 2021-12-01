@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 9
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 find_pair([X|L], Goal, X, Target) :-
     Target is Goal - X, member(Target, L).

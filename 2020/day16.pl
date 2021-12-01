@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 16
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 :- use_module(library(clpfd)).
 
 % -------------- Parsing --------------

@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 14
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 mask_re(S, Mask) :-
     re_matchsub("^mask = (?<mask>[10X]{36})$", S, Sub, []),

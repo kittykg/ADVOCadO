@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 11
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 get_seat(_, CoordX, CoordY, '.') :- (CoordX < 0 ; CoordY < 0).
 get_seat([X|L], CoordX, CoordY, '.') :-

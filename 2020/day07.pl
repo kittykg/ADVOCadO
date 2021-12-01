@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 7
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 % -------------------- Parser --------------------
 

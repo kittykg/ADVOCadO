@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 10
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 is_one(1).
 is_three(3).

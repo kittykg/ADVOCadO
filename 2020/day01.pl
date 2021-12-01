@@ -4,7 +4,7 @@
 
 :- use_module(library(lists)).
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 sat_sum(V1, V2, Goal) :- (V1 + V2) =:= Goal.
 

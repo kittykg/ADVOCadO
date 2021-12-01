@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 5
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 bt(L, L, _, L).
 bt(L, U, ['F'|C], Res) :-

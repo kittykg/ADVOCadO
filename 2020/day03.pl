@@ -2,7 +2,7 @@
 
 % AoC 2020 Day 3
 
-:- consult('helper.pl').
+:- consult('../helper.pl').
 
 check_line(Line, LineNum, Modulo) :-
     string_chars(Line, LineChars),
