@@ -1,3 +1,5 @@
+% nvim: set syntax=prolog
+
 % AoC 2021 Day 1
 
 :- consult('../helper.pl').
