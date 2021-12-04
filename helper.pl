@@ -59,6 +59,16 @@ enum_list(L, Idx) :-
 
 tail(L, T) :- append(_, [T], L).
 
+any(Goal, L) :- include(Goal, L, FL), FL \== [].
+
+flatten([], []).
+flatten([L|R], Res) :-
+    is_list(L),
+    flatten(R, RRes),
+    append(L, RRes, Res).
+
+take(N, List, FL) :- split_at(N, List, FL, _).
+
 % ------------------ Dict ------------------
 
 get_all_val(Dict, Vals) :-
