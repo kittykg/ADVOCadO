@@ -69,6 +69,10 @@ flatten([L|R], Res) :-
 
 take(N, List, FL) :- split_at(N, List, FL, _).
 
+zip([], [], []).
+zip([X1|R1], [X2|R2], [(X1, X2)|R]) :-
+    zip(R1, R2, R).
+
 % ------------------ Dict ------------------
 
 get_all_val(Dict, Vals) :-
