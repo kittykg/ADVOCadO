@@ -79,6 +79,9 @@ get_all_val(Dict, Vals) :-
     dict_keys(Dict, Keys), maplist(get_val_(Dict), Keys, Vals).
 get_val_(Dict, K, V) :- V = Dict.get(K).
 
+in_dict(Dict, K) :-
+    dict_keys(Dict, Keys), member(K, Keys), !.
+
 % ------------------ Misc ------------------
 
 mult_(X, Y, Res) :- Res is X * Y.
