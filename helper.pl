@@ -82,6 +82,11 @@ get_val_(Dict, K, V) :- V = Dict.get(K).
 in_dict(Dict, K) :-
     dict_keys(Dict, Keys), member(K, Keys), !.
 
+% ------------------ Trie ------------------
+
+get_trie_keys(T, Keys) :-
+    bagof(Key, trie_gen(T, Key), Keys).
+
 % ------------------ Misc ------------------
 
 mult_(X, Y, Res) :- Res is X * Y.

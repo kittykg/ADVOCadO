@@ -26,10 +26,6 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 ## Some TODOs
 
-For 2021:
-
-- Figure out a better solution for Day 5
-
 For 2020:
 
 - Finish it XD
