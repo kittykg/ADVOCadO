@@ -57,7 +57,8 @@ enum_list(L, Idx) :-
     length(L, Len), Upper is Len - 1,
     numlist(0, Upper, Idx).
 
-tail(L, T) :- append(_, [T], L).
+head([H|_], H).
+last(L, Last) :- append(_, [Last], L).
 
 any(Goal, L) :- include(Goal, L, FL), FL \== [].
 

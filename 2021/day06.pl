@@ -1,6 +1,6 @@
 % nvim: set syntax=prolog
 
-% AoC 2021 Day 4
+% AoC 2021 Day 6
 
 :- consult('../helper.pl').
 :- use_module(library(lambda)).

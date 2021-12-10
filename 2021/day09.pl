@@ -1,21 +1,24 @@
 % nvim: set syntax=prolog
 
-% AoC 2021 Day 4
+% AoC 2021 Day 9
 
 :- consult('../helper.pl').
 :- use_module(library(lambda)).
 :- use_module(library(apply)).
 :- use_module(library(clpfd)).
 
+% Board: [[Int]]
 
 %-----------------------------------%
 %            IO parsing             %
 %-----------------------------------%
 
+% parse_string_to_ints(+String, -Ints)
 parse_string_to_ints(S, L) :-
     string_chars(S, Chars),
     maplist(atom_number, Chars, L).
 
+% get_board(-Board)
 get_board(Board) :-
     open('input_09', read, Stream),
     read_string_file(Stream, SL), !,
@@ -26,15 +29,19 @@ get_board(Board) :-
 %            Basin Task             %
 %-----------------------------------%
 
+% get_point(+Coord, +Board, -Point)
 get_point((X, Y), L, Point) :-
     nth0(Y, L, XRow),
     nth0(X, XRow, Point).
 
+% make_tuple(+XCoord, +YCoord, -Coord)
 make_tuple(X, Y, (X, Y)).
 
+% in_bound((+MaxX, +MaxY), +Coord)
 in_bound((MaxX, MaxY), (X, Y)) :-
     X #< MaxX, X #> -1, Y #< MaxY, Y #> -1, !.
 
+% get_neighbours_coord(+Coord, +Board, -NeighboursCoords)
 get_neighbours_coord((X, Y), L, Neighbours) :-
     length(L, MaxY),
     nth0(0, L, Row),
@@ -47,10 +54,12 @@ get_neighbours_coord((X, Y), L, Neighbours) :-
         (LeftX, Y), (RightX, Y), (X, TopY), (X, BotY)
     ], Neighbours).
 
+% get_neighbours_point(+Coord, +Board, -NeighboursPoints)
 get_neighbours_point((X, Y), L, NBPoints) :-
     get_neighbours_coord((X, Y), L, NeighbourCoords),
     maplist(\C^(get_point(C, L)), NeighbourCoords, NBPoints).
 
+% low_point(+Coord, +Board)
 low_point((X, Y), L) :-
     get_point((X, Y), L, Point),
     get_neighbours_point((X, Y), L, NBPoints),
@@ -58,6 +67,7 @@ low_point((X, Y), L) :-
 
 lower_(P1, P2) :- P1 #< P2.
 
+% get_low_point_coord_in_row(+YCoord, +Board, -LowPointsCoords)
 get_low_point_coord_in_row(Y, L, AllLowPoints) :-
     nth0(Y, L, Row),
     length(Row, MaxX),
@@ -66,6 +76,7 @@ get_low_point_coord_in_row(Y, L, AllLowPoints) :-
     include(\X^(low_point((X, Y), L)), XList, LowPointX),
     maplist(\X^(make_tuple(X, Y)), LowPointX, AllLowPoints).
 
+% get_all_low_point_coord(+Board, -LowPointsCoords)
 get_all_low_point_coord(B, AllCoord) :-
     length(B, MaxY),
     EndY #= MaxY - 1,
@@ -81,6 +92,7 @@ task_1(Out) :-
     length(AllPoints, Extra),
     Out #= SumPoints + Extra.
 
+% basin(+Coord, +Board, -BasinSize)
 basin((X, Y), B, 0) :-
     get_point((X, Y), B, 9).
 basin(Coord, _, 0) :-

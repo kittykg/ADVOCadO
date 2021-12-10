@@ -34,7 +34,7 @@ task_(K, N) :-
     length(L, Len), Upper is Len + 1,
     numlist(1, Len, Idices),
     trie_new(T), construct_table(L, Idices, T),
-    tail(L, LastNum),
+    last(L, LastNum),
     get_nth_num(Upper, K, LastNum, T, N).
 
 task_1(N) :- task_(2021, N).
