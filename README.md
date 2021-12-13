@@ -10,9 +10,9 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 ## Status
 
-**2021**: 10 / 25
+**2021**: 11 / 25
 
-![2021](https://progress-bar.dev/40/)
+![2021](https://progress-bar.dev/44/)
 
 **2020**: 16 / 25 (Hopefully I'll be motivated enough to finish this =.=)
 
@@ -25,6 +25,10 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 - Python (Just for now! I'm gonna rewrite 2020 Day 16 part 2)
 
 ## Some TODOs
+
+For 2021:
+
+- Finish Day 11, 12
 
 For 2020:
 

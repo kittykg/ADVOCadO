@@ -74,6 +74,10 @@ zip([], [], []).
 zip([X1|R1], [X2|R2], [(X1, X2)|R]) :-
     zip(R1, R2, R).
 
+unzip([], [], []).
+unzip([(X, Y)|R], [X|R1], [Y|R2]) :-
+    unzip(R, R1, R2).
+
 % ------------------ Dict ------------------
 
 get_all_val(Dict, Vals) :-
