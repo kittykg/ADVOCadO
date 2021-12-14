@@ -1,6 +1,7 @@
 % nvim: set syntax=prolog
 
 :- use_module(library(readutil)).
+:- use_module(library(clpfd)).
 
 % ------------------ I/O ------------------
 
@@ -78,6 +79,13 @@ unzip([], [], []).
 unzip([(X, Y)|R], [X|R1], [Y|R2]) :-
     unzip(R, R1, R2).
 
+uneven_zip(L1, [], []) :-
+    length(L1, Len), Len #>= 1.
+uneven_zip([], L2, []) :-
+    length(L2, Len), Len #>= 1.
+uneven_zip([X1|R1], [X2|R2], [(X1, X2)|L]) :-
+    uneven_zip(R1, R2, L).
+
 % ------------------ Dict ------------------
 
 get_all_val(Dict, Vals) :-
@@ -91,6 +99,29 @@ in_dict(Dict, K) :-
 
 get_trie_keys(T, Keys) :-
     bagof(Key, trie_gen(T, Key), Keys).
+
+get_trie_vals(T, Vals) :-
+    get_trie_keys(T, Keys),
+    maplist(trie_lookup(T), Keys, Vals).
+
+get_trie_items(T, Items) :-
+    get_trie_keys(T, Keys),
+    maplist(trie_lookup(T), Keys, Vals),
+    zip(Keys, Vals, Items).
+
+get_counter_trie(L, T) :-
+    trie_new(T),
+    get_counter_trie_(L, T).
+
+get_counter_trie_([], _).
+get_counter_trie_([C|R], T) :-
+    (trie_gen(T, C), ! ->
+        trie_lookup(T, C, Val),
+        NewVal #= Val + 1,
+        trie_update(T, C, NewVal);
+        trie_insert(T, C, 1)
+    ),
+    get_counter_trie_(R, T).
 
 % ------------------ Misc ------------------
 
