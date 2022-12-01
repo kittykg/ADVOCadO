@@ -10,6 +10,10 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 ## Status
 
+**2021**: 1 / 25
+
+![2021](https://progress-bar.dev/4/)
+
 **2021**: 12 / 25
 
 ![2021](https://progress-bar.dev/48/)
@@ -26,13 +30,17 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 ## Some TODOs
 
+For 2022:
+
+Survive 🥲
+
 For 2021:
 
 - Finish Day 11, 12
 
 For 2020:
 
-- Finish it XD
+- Finish it
 
 - Use `clpfd` to handle numbers
 
