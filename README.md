@@ -10,9 +10,9 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 ## Status
 
-**2021**: 1 / 25
+**2021**: 2 / 25
 
-![2021](https://progress-bar.dev/4/)
+![2021](https://progress-bar.dev/8/)
 
 **2021**: 12 / 25
 
