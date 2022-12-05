@@ -2,17 +2,17 @@
 
 **ADV**ent **O**f **CO**de
 
-Be merry and eat chocolate!
+Be merry and don't eat chocolate (cut down sugar lol)
 
 Don't know what languages I'll use but Prolog is one of them for sure :D
 
-(Or maybe prolog will be the only language I'll use???)
+(Or maybe Prolog will be the **MAIN** language I'll use???)
 
 ## Status
 
-**2021**: 4 / 25
+**2021**: 5 / 25
 
-![2021](https://progress-bar.dev/16/)
+![2021](https://progress-bar.dev/20/)
 
 **2021**: 12 / 25
 
@@ -26,22 +26,24 @@ Don't know what languages I'll use but Prolog is one of them for sure :D
 
 - SWI-Prolog
 
-- Python (Just for now! I'm gonna rewrite 2020 Day 16 part 2)
+- Python
+
+    - Need to rewrite 2020 Day 16 part 2
+
+    - 2022 my lazy ass doing python first and try to finish AoC for once maybe. Check my [pyvent-of-code](https://github.com/kittykg/pyvent-of-code)
 
 ## Some TODOs
 
-For 2022:
-
-Survive 🥲
+For 2022: Survive 🥲
 
 For 2021:
 
-- Finish Day 11, 12
+- Finish it
 
 For 2020:
 
 - Finish it
 
-- Use `clpfd` to handle numbers
+- Use `clpfd` to handle numbers (Can't bother tbh, 2021 onwards should be using `clpfd` all the time)
 
 - Rewrite Day 16 in Prolog with DCG

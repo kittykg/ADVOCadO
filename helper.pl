@@ -8,6 +8,9 @@
 code_list_to_number(C, N) :-
     is_list(C), number_codes(N, C).
 
+string_to_number(S, N) :-
+    number_codes(N, S).
+
 read_number_line(Stream, N) :-
     read_line_to_codes(Stream, Codes),
     code_list_to_number(Codes, N).
