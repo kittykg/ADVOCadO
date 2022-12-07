@@ -66,11 +66,13 @@ last(L, Last) :- append(_, [Last], L).
 
 any(Goal, L) :- include(Goal, L, FL), FL \== [].
 
-flatten([], []).
+flatten([], []) :- !.
 flatten([L|R], Res) :-
-    is_list(L),
-    flatten(R, RRes),
-    append(L, RRes, Res).
+    !,
+    flatten(L, NewL),
+    flatten(R, NewR),
+    append(NewL, NewR, Res).
+flatten(L, [L]).
 
 take(N, List, FL) :- split_at(N, List, FL, _).
 
@@ -125,6 +127,13 @@ get_counter_trie_([C|R], T) :-
         trie_insert(T, C, 1)
     ),
     get_counter_trie_(R, T).
+
+print_trie(T) :-
+    get_trie_items(T, Items),
+    maplist(print_trie_, Items).
+print_trie_(Item) :-
+    term_string(Item, String),
+    writeln(String).
 
 % ------------------ Misc ------------------
 
