@@ -91,6 +91,10 @@ uneven_zip([], L2, []) :-
 uneven_zip([X1|R1], [X2|R2], [(X1, X2)|L]) :-
     uneven_zip(R1, R2, L).
 
+range(Start, End, Range) :-
+    EndPrime #= End - 1,
+    bagof(X, between(Start, EndPrime, X), Range).
+
 % ------------------ Dict ------------------
 
 get_all_val(Dict, Vals) :-

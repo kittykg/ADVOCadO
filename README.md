@@ -6,9 +6,9 @@ This has become a Prolog mainly challenge (and a procrastination tool atm for my
 
 ## Status
 
-**2021**: 7 / 25
+**2021**: 8 / 25
 
-![2021](https://progress-bar.dev/28/)
+![2021](https://progress-bar.dev/32/)
 
 **2021**: 12 / 25
 
