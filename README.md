@@ -6,9 +6,9 @@ This has become a Prolog mainly challenge (and a procrastination tool atm for my
 
 ## Status
 
-**2021**: 10 / 25
+**2021**: 11 / 25
 
-![2021](https://progress-bar.dev/40/)
+![2021](https://progress-bar.dev/44/)
 
 **2021**: 12 / 25
 
@@ -34,7 +34,7 @@ For 2022:
 
 - Survive 🥲
 
-- Day 10, 11, 12 (although they are all done in python)
+- Day 10, 11, 12, 14 (although they are all done in python)
 
 For 2021:
 
@@ -51,9 +51,6 @@ For 2020:
 ## Last but not least, my memes
 
 I'm a noob 🤡. So I make memes about my sadge Prolog AoC experience and post it on [r/adventofcode](https://www.reddit.com/r/adventofcode/) because why not?
-
-[2022 Day 13](https://www.reddit.com/r/adventofcode/comments/zkvt9d/2022_day_13prologi_gave_up_on_implementing_a/) - Instead of implementing
-a parser, I just copied the input into a huge list in `day13_input.pl`
 
 [2022 Day 1](https://www.reddit.com/r/adventofcode/comments/z9qh64/2022_day_1prolog_spent_30min_figuring_out_how_to/?utm_source=share&utm_medium=web2x&context=3) - My `helper.pl` broke probably because of the blank line
 
