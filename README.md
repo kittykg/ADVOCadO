@@ -6,9 +6,9 @@ This has become a Prolog mainly challenge (and a procrastination tool atm for my
 
 ## Status
 
-**2021**: 11 / 25
+**2022**: 12 / 25
 
-![2021](https://progress-bar.dev/44/)
+![2022](https://progress-bar.dev/48/)
 
 **2021**: 12 / 25
 
@@ -34,7 +34,9 @@ For 2022:
 
 - Survive 🥲
 
-- Day 10, 11, 12, 14 (although they are all done in python)
+- Day 11, 12, 14, 16 (although they are all done in python)
+
+- NOT DO DAY 17
 
 For 2021:
 
@@ -51,6 +53,8 @@ For 2020:
 ## Last but not least, my memes
 
 I'm a noob 🤡. So I make memes about my sadge Prolog AoC experience and post it on [r/adventofcode](https://www.reddit.com/r/adventofcode/) because why not?
+
+[2022 Day 16](https://www.reddit.com/r/adventofcode/comments/znjzjm/2022_day_16_if_a_solution_gives_me_a_star_then/) - My cheat python solution
 
 [2022 Day 1](https://www.reddit.com/r/adventofcode/comments/z9qh64/2022_day_1prolog_spent_30min_figuring_out_how_to/?utm_source=share&utm_medium=web2x&context=3) - My `helper.pl` broke probably because of the blank line
 
