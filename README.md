@@ -13,7 +13,7 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 **2023**: 1 / 25
 
-![2022](https://progress-bar.dev/4/)
+![2023](https://progress-bar.dev/4/)
 
 **2022**: 12 / 25
 
