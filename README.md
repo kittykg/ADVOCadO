@@ -11,9 +11,9 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
-**2023**: 1 / 25
+**2023**: 2 / 25
 
-![2023](https://progress-bar.dev/4/)
+![2023](https://progress-bar.dev/8/)
 
 **2022**: 12 / 25
 
@@ -45,6 +45,8 @@ For 2023:
 
 - Another year, another AoC prolog attempt UwU
 
+- Day 3 not happening
+
 For 2022:
 
 - Survive 🥲
@@ -70,6 +72,8 @@ For 2020:
 
 I'm a noob 🤡. So I make memes about my sadge Prolog AoC experience and post it
 on [r/adventofcode](https://www.reddit.com/r/adventofcode/) because why not?
+
+[2023 Day 3](https://www.reddit.com/r/adventofcode/comments/189rk3u/2023_day_3prolog_bye_guys_see_you_next_year/) - Yeah...🫠
 
 [2022 Day 16](https://www.reddit.com/r/adventofcode/comments/znjzjm/2022_day_16_if_a_solution_gives_me_a_star_then/) - My cheat python solution
 
