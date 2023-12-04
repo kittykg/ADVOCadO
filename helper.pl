@@ -141,5 +141,20 @@ print_trie_(Item) :-
 
 % ------------------ Misc ------------------
 
-mult_(X, Y, Res) :- Res is X * Y.
-minus(X, Y, Res) :- Res is X - Y.
+mult_(X, Y, Res) :- Res #= X * Y.
+minus(X, Y, Res) :- Res #= X - Y.
+add(X, Y, Res) :- Res #= X + Y.
+
+% ------–----------- Math ------------------
+
+power(_, 0, 1).
+power(Base, Exp, Res) :-
+    Exp > 0,
+    NewExp #= Exp - 1,
+    power(Base, NewExp, NewRes),
+    Res #= Base * NewRes.
+power(Base, Exp, Res) :-
+    Exp < 0,
+    NewExp #= abs(Exp),
+    power(Base, NewExp, NewRes),
+    Res #= 1 / NewRes.

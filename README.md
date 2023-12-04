@@ -11,9 +11,9 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
-**2023**: 2 / 25
+**2023**: 3 / 25
 
-![2023](https://progress-bar.dev/8/)
+![2023](https://progress-bar.dev/12/)
 
 **2022**: 12 / 25
 
@@ -32,6 +32,7 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 - SWI-Prolog
 
 - Python
+    - Some pre-parse in python in [pyvent-of-code](https://github.com/kittykg/pyvent-of-code)
 
     - Need to rewrite 2020 Day 16 part 2
 
