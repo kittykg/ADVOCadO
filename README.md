@@ -11,9 +11,9 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
-**2023**: 3 / 25
+**2023**: 3.5 / 25
 
-![2023](https://progress-bar.dev/12/)
+![2023](https://progress-bar.dev/14/)
 
 **2022**: 12 / 25
 
@@ -47,6 +47,8 @@ For 2023:
 - Another year, another AoC prolog attempt UwU
 
 - Day 3 not happening
+
+- Day 5 part 2 not working 🥲
 
 For 2022:
 
