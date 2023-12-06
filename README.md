@@ -11,9 +11,9 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
-**2023**: 3.5 / 25
+**2023**: 4.5 / 25
 
-![2023](https://progress-bar.dev/14/)
+![2023](https://progress-bar.dev/18/)
 
 **2022**: 12 / 25
 
