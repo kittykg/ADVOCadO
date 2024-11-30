@@ -13,19 +13,19 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 **2023**: 9.5 / 25
 
-![2023](https://progress-bar.dev/38/)
+![2023](https://geps.dev/progress/38/)
 
 **2022**: 12 / 25
 
-![2022](https://progress-bar.dev/48/)gi
+![2022](https://geps.dev/progress/48/)
 
 **2021**: 12 / 25
 
-![2021](https://progress-bar.dev/48/)
+![2021](https://geps.dev/progress/48/)
 
 **2020**: 16 / 25
 
-![2020](https://progress-bar.dev/64/)
+![2020](https://geps.dev/progress/64/)
 
 ## Languages
 
