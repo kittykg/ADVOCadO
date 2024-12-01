@@ -11,6 +11,10 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
+**2024** 1 / 25
+
+![2024](https://geps.dev/progress/4/)
+
 **2023**: 9.5 / 25
 
 ![2023](https://geps.dev/progress/38/)
