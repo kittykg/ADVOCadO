@@ -11,9 +11,9 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
-**2024** 1 / 25
+**2024**: 2 / 25
 
-![2024](https://geps.dev/progress/4/)
+![2024](https://geps.dev/progress/8/)
 
 **2023**: 9.5 / 25
 
@@ -33,9 +33,9 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Languages
 
-- SWI-Prolog
+* SWI-Prolog
 
-- Python
+* Python
     - Some pre-parse in python in [pyvent-of-code](https://github.com/kittykg/pyvent-of-code)
 
     - Need to rewrite 2020 Day 16 part 2
@@ -48,32 +48,32 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 For 2023:
 
-- Another year, another AoC prolog attempt UwU
+* Another year, another AoC prolog attempt UwU
 
-- Day 3 not happening
+* Day 3 not happening
 
-- Day 5 part 2 not working 🥲
+* Day 5 part 2 not working 🥲
 
 For 2022:
 
-- Survive 🥲
+* Survive 🥲
 
-- Day 11, 12, 14, 16 (although they are all done in python)
+* Day 11, 12, 14, 16 (although they are all done in python)
 
-- NOT DO DAY 17
+* NOT DO DAY 17
 
 For 2021:
 
-- Finish it (hopium)
+* Finish it (hopium)
 
 For 2020:
 
-- Finish it (hopium)
+* Finish it (hopium)
 
-- Use `clpfd` to handle numbers (Can't bother tbh, 2021 onwards should be using
+* Use `clpfd` to handle numbers (Can't bother tbh, 2021 onwards should be using
 `clpfd` all the time)
 
-- Rewrite Day 16 in Prolog with DCG
+* Rewrite Day 16 in Prolog with DCG
 
 ## Last but not least, my memes
 
