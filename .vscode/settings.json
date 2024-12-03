@@ -1,3 +1,6 @@
 {
-    "prolog.executablePath": "/Applications/SWI-Prolog.app/Contents/MacOS/swipl"
+    "prolog.executablePath": "/Applications/SWI-Prolog.app/Contents/MacOS/swipl",
+    "files.associations": {
+        "**/input*": "plaintext",
+    }
 }
