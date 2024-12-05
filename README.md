@@ -9,7 +9,7 @@ To solve this issue, from 2022, I have [pyvent-of-code](https://github.com/kitty
 
 Year    | Progress | Bar
 ------- | -------- | --------------------------------------
-➡️ 2024  | 4 / 25   | ![2024](https://geps.dev/progress/16/)
+➡️ 2024  | 5 / 25   | ![2024](https://geps.dev/progress/20/)
 2023    | 9.5 / 25 | ![2023](https://geps.dev/progress/38/)
 2022    | 12 / 25  | ![2022](https://geps.dev/progress/48/)
 2021    | 12 / 25  | ![2021](https://geps.dev/progress/48/)
