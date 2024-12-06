@@ -1,25 +1,33 @@
 # ADVOCadO
 
-ADVOCadO, a silly name variation by me for **ADV**ent **O**f **CO**de (which doesn't even make sense not that I think of it). 🎄 Be merry 🎄 and EAT LOTS OF CHOCOLATE
+ADVOCadO, a silly name variation by me for **ADV**ent **O**f **CO**de (which
+doesn't even make sense not that I think of it). 🎄 Be merry 🎄 and EAT LOTS OF
+CHOCOLATE
 
-This has become a Prolog mainly challenge (and a procrastination tool for my PhD). The current pattern is: I RIOT and drop Prolog the moment any sort of 2D array crap comes in ¯\\\_(ツ)\_/¯
-To solve this issue, from 2022, I have [pyvent-of-code](https://github.com/kittykg/pyvent-of-code) where I code in python, and maybe for once in forever, I'll manage to finish a full year of AoC.
+This has become a Prolog mainly challenge (and a procrastination tool for my
+PhD). The current pattern is: I RIOT and drop Prolog the moment any sort of 2D
+array crap comes in ¯\\\_(ツ)\_/¯ To solve this issue, from 2022, I have
+[pyvent-of-code](https://github.com/kittykg/pyvent-of-code) where I code in
+python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
-Year    | Progress | Bar
-------- | -------- | --------------------------------------
-➡️ 2024  | 5 / 25   | ![2024](https://geps.dev/progress/20/)
-2023    | 9.5 / 25 | ![2023](https://geps.dev/progress/38/)
-2022    | 12 / 25  | ![2022](https://geps.dev/progress/48/)
-2021    | 12 / 25  | ![2021](https://geps.dev/progress/48/)
-2020    | 16 / 25  | ![2020](https://geps.dev/progress/64/)
+Year    | Progress  | Bar
+------- | --------- | --------------------------------------
+➡️ 2024  | 5.75 / 25 | ![2024](https://geps.dev/progress/23/)
+2023    | 9.5 / 25  | ![2023](https://geps.dev/progress/38/)
+2022    | 12 / 25   | ![2022](https://geps.dev/progress/48/)
+2021    | 12 / 25   | ![2021](https://geps.dev/progress/48/)
+2020    | 16 / 25   | ![2020](https://geps.dev/progress/64/)
 
 ### Notes & TODOs
 
 **2024**:
 
 - Finally committed and learned DCG (POG)
+
+- 2024 Day 6 part 2 works on test, not sure about real input lmao (answer
+  computed by python, swipl runs for 15 mins and still not terminating 🤡)
 
 **2023**:
 
@@ -45,7 +53,8 @@ Year    | Progress | Bar
 
 - Finish it (hopium)
 
-- Use `clpfd` to handle numbers (Can't bother tbh, 2021 onwards should be using `clpfd` all the time)
+- Use `clpfd` to handle numbers (Can't bother tbh, 2021 onwards should be using
+  `clpfd` all the time)
 
 - Rewrite Day 16 in Prolog with DCG
 
@@ -59,11 +68,15 @@ Year    | Progress | Bar
 
   - Need to rewrite 2020 Day 16 part 2
 
-  - 2022 / 2023 my lazy ass doing python first and try to finish AoC for once _maybe_. Check my [pyvent-of-code](https://github.com/kittykg/pyvent-of-code) for status and solutions.
+  - 2022 / 2023 my lazy ass doing python first and try to finish AoC for once
+    _maybe_. Check my
+    [pyvent-of-code](https://github.com/kittykg/pyvent-of-code) for status and
+    solutions.
 
 ## Last but not least, my memes
 
-I'm a noob 🤡. So I make memes about my sadge Prolog AoC experience and post it on [r/adventofcode](https://www.reddit.com/r/adventofcode/) because why not?
+I'm a noob 🤡. So I make memes about my sadge Prolog AoC experience and post it
+on [r/adventofcode](https://www.reddit.com/r/adventofcode/) because why not?
 
 [2023 Day 3](https://www.reddit.com/r/adventofcode/comments/189rk3u/2023_day_3prolog_bye_guys_see_you_next_year/) - Yeah...🫠
 

@@ -1,2 +1,6 @@
 */input*
 */*_input*
+
+# Personal scripts
+# wrap_up.py -- git commit + create new file for next day
+wrap_up.py
