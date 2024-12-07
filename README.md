@@ -12,13 +12,13 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 ## Status
 
-Year    | Progress  | Bar
-------- | --------- | --------------------------------------
-➡️ 2024  | 5.75 / 25 | ![2024](https://geps.dev/progress/23/)
-2023    | 9.5 / 25  | ![2023](https://geps.dev/progress/38/)
-2022    | 12 / 25   | ![2022](https://geps.dev/progress/48/)
-2021    | 12 / 25   | ![2021](https://geps.dev/progress/48/)
-2020    | 16 / 25   | ![2020](https://geps.dev/progress/64/)
+Year    | Progress | Bar
+------- | -------- | --------------------------------------
+➡️ 2024  | 6 / 25   | ![2024](https://geps.dev/progress/24/)
+2023    | 9.5 / 25 | ![2023](https://geps.dev/progress/38/)
+2022    | 12 / 25  | ![2022](https://geps.dev/progress/48/)
+2021    | 12 / 25  | ![2021](https://geps.dev/progress/48/)
+2020    | 16 / 25  | ![2020](https://geps.dev/progress/64/)
 
 ### Notes & TODOs
 
@@ -26,8 +26,7 @@ Year    | Progress  | Bar
 
 - Finally committed and learned DCG (POG)
 
-- 2024 Day 6 part 2 works on test, not sure about real input lmao (answer
-  computed by python, swipl runs for 15 mins and still not terminating 🤡)
+- 2024 Day 6 part 2 takes forever to run lol
 
 **2023**:
 

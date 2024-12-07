@@ -7,6 +7,8 @@
 :- set_prolog_flag(double_quotes, codes).
 :- consult('../helper.pl').
 
+:- initialization(main, main).
+
 % ---------- DCG ----------
 line([]) --> ("\n"; eos), !.
 line([X|XS]) --> [X], line(XS).
@@ -53,8 +55,7 @@ go(Grid, Curr, [Curr|Path]) :-
     go_(Grid, Curr, Next),
     go(Grid, Next, Path).
 
-task_1(K) :-
-    get_grid(Grid),
+task_1(Grid, K) :-
     start_loc(Grid, X, Y),
     go(Grid, (north, X, Y), Path),
     maplist([(P)]>>second(P), Path, Locations),
@@ -79,7 +80,13 @@ task_2_aux(Grid, (CX, CY)) :-
     change_grid(Grid, NewGrid, (CX, CY)),
     loop_(NewGrid, (north, X, Y), []).
 
-task_2(K) :-
-    get_grid(Grid),
+task_2(Grid, K) :-
     setof((X, Y), Grid^task_2_aux(Grid, (X, Y)), L),
     length(L, K).
+
+main(_) :-
+    get_grid(Grid), !,
+    task_1(Grid, K1),
+    format("Task 1: ~a~n", K1),
+    task_2(Grid, X2),
+    format("Task 2: ~a~n", X2).
