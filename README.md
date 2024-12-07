@@ -14,7 +14,7 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 Year    | Progress | Bar
 ------- | -------- | --------------------------------------
-➡️ 2024  | 6 / 25   | ![2024](https://geps.dev/progress/24/)
+➡️ 2024  | 7 / 25   | ![2024](https://geps.dev/progress/28/)
 2023    | 9.5 / 25 | ![2023](https://geps.dev/progress/38/)
 2022    | 12 / 25  | ![2022](https://geps.dev/progress/48/)
 2021    | 12 / 25  | ![2021](https://geps.dev/progress/48/)
@@ -26,7 +26,10 @@ Year    | Progress | Bar
 
 - Finally committed and learned DCG (POG)
 
-- 2024 Day 6 part 2 takes forever to run lol
+- 2024 Day 6 part 2 takes 2.5 hrs to run lol
+
+- 2024 Day 7 takes in total 14.8 s to run (compared to combinatorial python's
+  19.1s POG)
 
 **2023**:
 
