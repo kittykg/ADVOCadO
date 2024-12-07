@@ -88,5 +88,5 @@ main(_) :-
     get_grid(Grid), !,
     task_1(Grid, K1),
     format("Task 1: ~a~n", K1),
-    task_2(Grid, X2),
-    format("Task 2: ~a~n", X2).
+    task_2(Grid, K2),
+    format("Task 2: ~a~n", K2).
