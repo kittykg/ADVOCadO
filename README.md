@@ -14,7 +14,7 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 Year    | Progress | Bar
 ------- | -------- | --------------------------------------
-➡️ 2024  | 7 / 25   | ![2024](https://geps.dev/progress/28/)
+➡️ 2024  | 8 / 25   | ![2024](https://geps.dev/progress/32/)
 2023    | 9.5 / 25 | ![2023](https://geps.dev/progress/38/)
 2022    | 12 / 25  | ![2022](https://geps.dev/progress/48/)
 2021    | 12 / 25  | ![2021](https://geps.dev/progress/48/)
@@ -26,10 +26,13 @@ Year    | Progress | Bar
 
 - Finally committed and learned DCG (POG)
 
-- 2024 Day 6 part 2 takes 2.5 hrs to run lol
+- Day 6 part 2 takes 2.5 hrs to run lol
 
-- 2024 Day 7 takes in total 14.8 s to run (compared to combinatorial python's
-  19.1s POG)
+- Day 7 takes in total 14.8 s to run (compared to combinatorial python's 19.1s
+  POG)
+
+- Day 9 not happening. I did too much mutation in python, don't think it will
+  translate well in Prolog 🥲
 
 **2023**:
 
