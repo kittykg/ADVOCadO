@@ -14,7 +14,7 @@ python, and maybe for once in forever, I'll manage to finish a full year of AoC.
 
 Year    | Progress  | Bar
 ------- | --------- | --------------------------------------
-➡️ 2024  | 12.5 / 25 | ![2024](https://geps.dev/progress/50/)
+➡️ 2024  | 13.5 / 25 | ![2024](https://geps.dev/progress/54/)
 2023    | 9.5 / 25  | ![2023](https://geps.dev/progress/38/)
 2022    | 12 / 25   | ![2022](https://geps.dev/progress/48/)
 2021    | 12 / 25   | ![2021](https://geps.dev/progress/48/)
@@ -31,8 +31,6 @@ Year    | Progress  | Bar
 - Day 7 takes in total 14.8 s to run (compared to combinatorial python's 19.1s
   POG)
 
-- Day 14 part 2 -- checking 🎄, not sure I want to do it lol
-
 - Not happening
 
   - Day 9 -- I did too much mutation in python, don't think it will
@@ -40,7 +38,15 @@ Year    | Progress  | Bar
 
   - Day 15 -- 2D array moving boxes? NOPE 🙃
 
-  - Day 16 -- Dijkstra? I don't want to 🙃
+  - Day 16, 18 -- Dijkstra? I don't want to 🙃
+
+  - Day 20 -- I don't want to 🙃
+
+- Maybe??? If I have time
+
+  - Day 14 part 2 -- checking 🎄, not sure I want to do it lol
+
+  - Day 17 -- might be doable
 
 **2023**:
 
